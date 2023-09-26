@@ -1,7 +1,7 @@
 # Bookstore App Refactored with Vite
 
 ### Overview
-This repository contains the refactored version of a bookstore app that originally used a different build tool but has now been updated to use Vite. The app allows users to search for books by author, title, or ISBN number, fetching results from the Google Books API. Users can navigate through pages of search results using pagination. Additionally, users have the capability to save books into local storage under "My Library." This project serves as a demonstration of the developer's knowledge of API integration, fundamental JavaScript concepts, and web design with CSS. 
+This was one of my very first projects - it was originally built with vanilla javascript, but I am in the process of starting to refactor the code to become more responsive/eventually to become refactored into a React application. The app allows users to search for books by author, title, or ISBN number, fetching results from the Google Books API. Users can navigate through pages of search results using pagination. Additionally, users have the capability to save books into local storage under "My Library." This project serves as a demonstration of the developer's knowledge of API integration, fundamental JavaScript concepts, and web design with CSS. 
 
 <img width="960" alt="image" src="https://github.com/Hayden-git/vite-bookstore/assets/105612431/1fdfdac8-e0ea-4be2-97e9-b191acb65c3e">
 
