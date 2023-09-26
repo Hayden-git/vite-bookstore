@@ -10,7 +10,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 5%;
-  background-image: linear-gradient(rgba(57, 78, 117, 0.9), rgba(35, 43, 61, 0.9)), url(./public/pine_forest.jpg);
+  background-image: linear-gradient(rgba(57, 78, 117, 0.9), rgba(35, 43, 61, 0.9)), url(./pine_forest.jpg);
   background-position: center;
   background-size: cover;
 }

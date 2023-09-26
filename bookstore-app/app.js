@@ -1,5 +1,8 @@
+
+require('dotenv').config();
+
 // Set API key and URL for Google Books API
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.GOOGLE_BOOKS_API_KEY; // issue with .env file to fix 
 const API_URL = 'https://www.googleapis.com/books/v1/volumes?&q=';
 
 // globally defined to call inside functions
