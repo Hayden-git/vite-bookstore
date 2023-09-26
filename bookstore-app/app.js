@@ -1,5 +1,5 @@
 // Set API key and URL for Google Books API
-const API_KEY = 'AIzaSyCKdYD2XZpJaBa9bVtH5k-TOGUhkr8q41M';
+const API_KEY = process.env.API_KEY;
 const API_URL = 'https://www.googleapis.com/books/v1/volumes?&q=';
 
 // globally defined to call inside functions
