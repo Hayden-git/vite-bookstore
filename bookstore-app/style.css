@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(57, 78, 117, 0.9), rgba(35, 43, 61, 0.9)), url(./public/pine_forest.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Playfair Display", sans-serif;
+  color: #e9d5ff;
+  font-size: 1.5rem;
+  /* text-decoration: none; */
+
+  align-items: center;
+  border-radius: 60px;
+  padding: 8px 20px;
+  background-color: none;
+  outline: none;
+}
+
+nav a:hover {
+  color: #c18efc;
+}
+
+form {
+  margin: auto;
+  display: block;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(158, 147, 147, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  top: 3rem;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #de9ef8;
+
+  letter-spacing: 1px;
+}
+
+::placeholder {
+  color: #ede2ff;
+}
+
+.search-bar button img {
+  width: 25px;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #7802ff;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #d7b3ff;
+}
+
+
+/* Search results displayed on the page */
+.results {
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.result-image {
+  font-family: "Playfair Display", sans-serif;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+}
+
+.result-title {
+  color: #e9d7fd;
+  font-family: "Playfair Display", sans-serif;
+  padding-left: 2rem;
+
+}
+
+.result-author {
+  color: #e9d7fd;
+  font-family: "Playfair Display", sans-serif;
+  padding-left: 2rem;
+
+}
+
+.result-ratings {
+  color: #e9d7fd;
+  font-family: "Playfair Display", sans-serif;
+  padding-left: 2rem;
+}
+
+.result-publishing {
+  color: #e9d7fd;
+  font-family: "Playfair Display", sans-serif;
+  padding-left: 2rem;
+
+}
+
+.result-blurb {
+  color: #e9d7fd;
+  font-family: "Playfair Display", sans-serif;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.result-link {
+  width: 10%;
+  max-width: 700px;
+  background: rgba(158, 147, 147, 0.2);
+
+  align-items: center;
+  border-radius: 60px;
+  color: #e3cbff;
+
+  border: 0;
+  padding: 24px 20px;
+  margin: -15px 0 15px 28px;
+  font-size: 20px;
+  justify-content: center;
+  width: 10rem;
+  inline-size: auto;
+
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.result-link::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.result-link::before {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.result-link:hover {
+  background: #d7b3ff;
+  color: black;
+}
+
+.result-link:active {
+  background: #d7b3ff;
+}
+
+.result-link a {
+  text-decoration: none;
+  font-family: "Playfair Display", sans-serif;
+  color: #e9d5ff;
+}
+
+.result-link a:hover {
+  color: rgb(57, 54, 58);
+}
+
+.add-to-library-btn {
+  width: 10%;
+  max-width: 700px;
+  background: rgba(158, 147, 147, 0.2);
+  /* display: flex; */
+  align-items: center;
+  border-radius: 60px;
+  color: #e9d5ff;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  border: 0;
+  padding: 24px 20px;
+  margin: 10px 5px 15px 28px;
+  font-size: 20px;
+  justify-content: center;
+  width: 10rem;
+
+  inline-size: auto;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.add-to-library-btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.add-to-library-btn::before {
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.add-to-library-btn:hover {
+  background: #d7b3ff;
+  color: black;
+}
+
+.add-to-library-btn:active {
+  background: #d7b3ff;
+} 
+
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.book {
+width: 25%;
+text-align: center;
+}
+
+.saved-books-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.saved-book {
+  width: 25%;
+  text-align: center;
+}
+
+.remove-from-library-btn {
+  width: 10%;
+  max-width: 700px;
+  background: rgba(158, 147, 147, 0.2);
+  /* display: flex; */
+  align-items: center;
+  border-radius: 60px;
+  color: #e9d5ff;
+
+  border: 0;
+  padding: 24px 20px;
+  margin: 10px 5px 15px 28px;
+  font-size: 20px;
+  justify-content: center;
+  width: 10rem;
+
+  inline-size: auto;
+
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.remove-from-library-btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.remove-from-library-btn::before {
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.remove-from-library-btn:hover {
+  background: #d7b3ff;
+  color: black;
+}
+
+.remove-from-library-btn:active {
+  background: #d7b3ff;
+} 
+
+
+.page-down,
+.page-up {
+padding: 1rem;
+display: flexbox;
+
+position: relative;
+top: 0.7rem;
+left: 50%;
+
+border: none;
+background-color: transparent;
+background: rgba(158, 147, 147, 0.2);
+
+color: #7802ff;
+cursor: pointer;
+border-radius: 50% 50%;
+}
+
+.page-down:hover,
+.page-up:hover {
+color: black;
+background: #d7b3ff;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.page-down::before,
+.page-up::before {
+font-size: 2rem;
+}
+
+.page-down::before {
+content: "-";
+}
+
+.page-up::before {
+content: "+";
+}

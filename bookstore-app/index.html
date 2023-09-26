@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <nav><a href="./mylibrary.html">My Library</a></nav>
+    </header>
+    
+    <form action="#" onsubmit="searchBooks(this.querySelector('input').value); return false;" class="search-bar">
+        <input type="text" name="" id="query" placeholder="Search a title, author, or ISBN #...">
+        <button class="search-button" type="submit"><img src="./public/search.png"></button>
+    </form>
+
+    <div class="page-changer">
+        <button class="page-down" onClick="changePage('down')">
+          <span class="button-icon"></span>
+        </button>
+        <button class="page-up" onClick="changePage('up')">
+          <span class="button-icon"></span>
+        </button>
+      </div>
+      
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
