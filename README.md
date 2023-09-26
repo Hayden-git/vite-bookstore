@@ -1,3 +1,3 @@
 # Bookstore App Refactored with Vite
-Overview
+## Overview
 This repository contains the refactored version of a bookstore app that originally used a different build tool but has now been updated to use Vite. The app allows users to search for books by author, title, or ISBN number, fetching results from the Google Books API. Users can navigate through pages of search results using pagination. Additionally, users have the capability to save books into local storage under "My Library." This project serves as a demonstration of the developer's knowledge of web design, API integration, and fundamental JavaScript concepts.
